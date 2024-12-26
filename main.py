@@ -4,7 +4,7 @@ from customtkinter import *
 
 
 
-torrent_file = TorrentDownloader("magnet..", '.')
+torrent_file = TorrentDownloader("magnet:?xt=urn:btih:5a222f72078f6ed82ad5a49789c92ffc681223e5&dn=Deadpool.%26.Wolverine.2024.1080P-Dual-Lat&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce", '.')
 
 def start_dowload():
     asyncio.run(torrent_file.start_download())
